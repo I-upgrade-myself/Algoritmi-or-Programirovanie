@@ -3,7 +3,7 @@
 int main() {
     int num1, num2, num3;
 
-     Введення чисел користувачем
+   //  Введення чисел користувачем
     printf(Введіть перше число );
     scanf(%d, &num1);
 
@@ -13,13 +13,13 @@ int main() {
     printf(Введіть третє число );
     scanf(%d, &num3);
 
-     if (num1  num2 && num1  num3) {
+     if (num1 > num2 && num1 > num3) {
         printf(Максимальне число %dn, num1);
     } 
-    else if (num2  num1 && num2  num3) {
+    else if (num2 > num1 && num2 > num3) {
         printf(Максимальне число %dn, num2);
     } 
-    else if (num3  num1 && num3  num2) {
+    else if (num3 > num1 && num3 > num2) {
         printf(Максимальне число %dn, num3);
     } 
     else {
