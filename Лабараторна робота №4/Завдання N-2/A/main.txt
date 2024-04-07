@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int sum = 0;
+    int count = 0;
+    float num;
+
+    for (int i = 2; i <= 100; i += 2) {
+        sum += i; // обчислити загальну суму парних чисел
+        count++;  // кількості парних чисел.
+    }
+
+     num = (float) sum / count;
+
+    printf("Середнє арифметичне парних чисел в діапазоні [1;100]: %.2f\n", num);
+
+    return 0;
+}
