@@ -16,7 +16,7 @@ int main() {
         } else {
             break; 
         }
-    } while (-2);
+    } while (1);
 
     
     a = sqrt(x * x * y - z) + log2(x + y + z);
