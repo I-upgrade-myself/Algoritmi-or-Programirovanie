@@ -26,7 +26,6 @@ int main() {
               firstPos = i;
             } else if(lastPos == -1) {
                   lastPos = i;
-                break;
             }
         }
     }
@@ -36,14 +35,12 @@ int main() {
         for(int i = firstPos + 1; i < lastPos; i++) {
             sum += a[i];
         }
-    }
-
+       printf("Сума елементів між першим і другим додатними елементами: %d\n", sum);
+    }else {
+      printf("Недостатньо додатніх елементів для обчислення суми.\n");
+  }
     printf("Максимальний елемент масиву: %d\n", max);
-    if(firstPos != -1 && lastPos != -1) {
-        printf("Сума елементів між першим і другим додатними елементами: %d\n", sum);
-    } else {
-        printf("Недостатньо додатніх елементів для обчислення суми.\n");
-    }
+ 
 
     return 0;
 }
