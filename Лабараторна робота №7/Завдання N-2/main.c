@@ -32,7 +32,7 @@ int sumAfterFirstNegative(int array[], int size) {
     int foundNegative = 0;
     for (int i = 0; i < size; i++) {
         if (foundNegative) {
-            sum += abs(array[i]); 
+            sum += abs(array[i]);  // обчислити суму абсолютних значень
         } else if (array[i] < 0) {
             foundNegative = 1;
         }
